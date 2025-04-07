@@ -11,6 +11,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,20 +66,29 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
-    <header class="bg-dark py-5" style="position: relative; background-image: url('https://i1.adis.ws/i/canon/get-inspired-food-photography-tips-4-1920x1080-f9288d38-d5f8-11ea-9618-f8bc127793a9?w=1920&sm=aspect&aspect=16:9&qlt=80&scaleFit=poi&poi=0.2577972984313965,0.3199381849500868,0.125,0.2222222222222222&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)'); background-size: cover; background-position: center;background-repeat: no-repeat;height: 800px;">
-
-        <!-- Dark overlay -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1;"></div>
-      
-        <!-- Content -->
-        <div class="container px-4 px-lg-5 my-5" style="position: relative; z-index: 2;">
-          <div class="text-center text-white" style="margin-top: 300px;">
-            <p class="display-4 fw-bold" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);font-family: Sour Gummy, sans-serif; font-size: 80px;">Culinary Corner</p>
-            <p class="lead fw-normal text-white-50 mb-0" style="text-shadow: 1px 1px 5px rgba(0,0,0,0.5); font-family: Nunito,serif; font-size: 30px;">For all your Culinary Confusions!!</p>
+    <header>
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i1.adis.ws/i/canon/get-inspired-food-photography-tips-4-1920x1080-f9288d38-d5f8-11ea-9618-f8bc127793a9?w=1920" class="d-block w-100" style="height: 800px; object-fit: cover;" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://learn.captureone.com/wp-content/uploads/sites/2/michaela-hartwig-food-styling-blog-post-capture-one-pro-raw-photo-editor-noodle-bowl-1.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.foodandwine.com/thmb/3c9F_orac_iLt7eGWo440K8s3zI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/almond-affogato-FT-RECIPE1121-0dd7cafd1e8c496097adec7470a3a064.jpg" class="d-block w-100" style="height: 800px; object-fit: cover;" alt="Slide 3">
+            </div>
           </div>
-        </div>
-      </header>
+      
+         <!-- Static Overlay Text -->
+  <div class="d-flex flex-column justify-content-center align-items-center text-center"
+  style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 2;">
+<h1 class="display-3 fw-bold text-white" style="font-family: 'Sour Gummy', sans-serif; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Culinary Corner</h1>
+<p class="lead text-white" style="font-family: 'Nunito', serif; font-size: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">For all your Culinary Confusions!!</p>
+</div>
+</div>
+</header>
+      
       
     <!-- Section-->
     <section class="py-5">
@@ -92,6 +104,7 @@
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
     </footer>
+   
 </body>
 
 <script>
